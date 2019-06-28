@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+
+	<style>
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		@font-face {
+			font-family: GothamPro;
+			src: url('./fonts/GothamPro-Bold.eot');
+			src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+				url('./fonts/GothamPro-Bold.woff') format('woff'),
+				url('./fonts/GothamPro-Bold.ttf') format('truetype');
+			font-weight: bold;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: GothamPro;
+			src: url('./fonts/GothamPro.eot');
+			src: local('Gotham Pro'), local('GothamPro'),
+				url('./fonts/GothamPro.woff') format('woff'),
+				url('./fonts/GothamPro.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		.wrapper{
+			background-image: url(./images/BG.jpg);
+			font-family: GothamPro;
+			padding: 110px 43px 0 43px;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+
+			animation-name: wrapper;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes wrapper {
+			0%  {
+				padding: 110px 43px 0 43px;
+			}
+
+
+			20%  {
+				padding: 110px 43px 0 43px;
+			}
+
+			21%  {
+				padding: 70px 77px 0 77px;
+			}
+
+			77%  {
+				padding: 70px 77px 0 77px;
+			}
+
+			78%  {
+				padding: 110px 43px 0 43px;
+			}
+		
+			100% {
+				padding: 110px 43px 0 43px;
+			}
+		}
+
+
+
+
+/* title_main */
+		.title_main{
+			transform: translateX(0%);
+			animation-name: title_main;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+		}
+
+		.title_main p:first-child{
+			font-size: 30px;
+			color: white;
+			text-transform: uppercase;
+			font-weight: bold;	
+		}
+
+		.title_main p:last-child{
+			font-size: 30px;
+			color: white;	
+		}
+
+		/* title_main */
+
+		@keyframes title_main {
+			0%  {
+				transform: translateX(0%);
+				display: block;
+			}
+
+
+			20%  {
+				transform: translateX(0%);
+				display: block;
+			}
+
+			21%  {
+				transform: translateX(180%);
+				display: none;
+			}
+
+			77%  {
+				transform: translateX(180%);
+			}
+
+			78%  {
+				transform: translateX(0%);
+			}
+		
+			100% {
+				transform: translateX(0%);
+				display: none;
+			}
+		}
+	
+/* title_main_2 */
+		.title_main_2{
+			transform: translateX(-150%);
+			animation-name: title_main_2;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+			padding-right: 50px;
+			position: absolute;
+			top: 160px;
+		}
+
+		.title_main_2 p:first-child{
+			font-size: 19px;
+			color: white;
+			text-transform: uppercase;
+			font-weight: bold;	
+		}
+
+		.title_main_2 p:last-child{
+			font-size: 19px;
+			color: white;	
+		}
+
+		/* title_main_2 */
+
+		@keyframes title_main_2 {
+			0%  {
+				transform: translateX(-150%);
+				display: block;
+			}
+
+
+			20%  {
+				transform: translateX(-150%);
+				display: block;
+			}
+
+			21%  {
+				transform: translateX(0%);
+				display: none;
+			}
+
+			77%  {
+				transform: translateX(0%);
+			}
+
+			78%  {
+				transform: translateX(180%);
+			}
+		
+			100% {
+				transform: translateX(180%);
+				display: none;
+			}
+		}
+
+
+/* logo_main */
+		.logo_block{
+			
+			display: flex;
+    		justify-content: center;
+		}
+
+		.logo_block img{
+			transform: scale(1);
+			animation-name: logo;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+			padding-bottom: 78px;
+		}		
+
+		/* logo */
+
+		@keyframes logo {
+			0%  {
+				transform: scale(1);
+			}
+
+			20%{
+				transform: scale(1);
+			}
+
+			21%  {
+				transform: scale(0.7);
+			}
+
+			77%  {
+				transform: scale(0.7);
+			}
+
+			78%  {
+				transform: scale(1);
+			}
+		
+			100% {
+				transform: scale(1);
+			}
+		}
+
+
+/* screen2 */
+
+		.screen2{
+			position: absolute;
+			width: 100%;
+			height: 260px;
+			padding: 183px 0 0 50px;
+			z-index: 10000;
+			bottom: 0;
+			left: 0;
+			transform: translateX(-120%);
+			background-image: url(./images/green.png);
+
+			animation-name: screen2;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+		}
+
+
+		/* screen2 */
+
+		@keyframes screen2 {
+			0%  {
+				transform: translateX(-120%);
+				
+			}
+
+			20%  {
+				transform: translateX(-120%);
+			
+			}
+
+			20.6%  {
+				transform: translateX(0%);
+				
+			}
+
+			39%  {
+				transform: translateX(0%);
+				
+			}
+
+			40%  {
+				transform: translateX(-120%);
+				
+			}
+		
+			100% {
+				transform: translateX(-120%);
+			
+			}
+		}
+
+		.screen2 .title p{
+			font-size: 21px;
+			color: white;
+		}
+
+		.screen2 .title p span{
+			font-weight: bold;
+		}
+
+		
+
+/* img2 */
+
+		.block_img_2{
+			transform: translateX(150%);
+			animation-name: img2;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+			position: relative;
+			z-index: 100000;
+			margin-left: -30px;
+			margin-top: -45px;
+		}
+
+		@keyframes img2 {
+			0%  {
+				transform: translateX(150%);
+				
+			}
+
+			20%  {
+				transform: translateX(150%);
+				display: block;
+			
+			}
+
+			21%  {
+				transform: translateX(0%);
+				display: block;
+				
+			}
+
+			39%  {
+				transform: translateX(0%);
+				display: block;
+				
+			}
+
+			40%  {
+				transform: translateX(150%);
+				display: block;
+				
+			}
+		
+			100% {
+				transform: translateX(150%);
+			
+			}
+		}
+
+
+
+/* screen 3 */
+
+		.screen3{
+			position: absolute;
+			width: 100%;
+			height: 235px;
+			padding: 139px 0 0 50px;
+			z-index: 10000;
+			bottom: 0;
+			left: 0;
+			transform: translateX(150%);
+			background-image: url(./images/blue.png);
+
+			animation-name: screen3;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+		}
+
+
+		/* screen3 */
+
+		@keyframes screen3 {
+			0%  {
+				transform: translateX(150%);
+				
+			}
+
+			20%  {
+				transform: translateX(150%);
+			
+			}
+
+			21%  {
+				transform: translateX(150%);	
+			}
+
+			39%  {
+				transform: translateX(150%);
+				
+			}
+
+			39.6%  {
+				transform: translateX(0%);
+			}
+
+			58%  {
+				transform: translateX(0%);
+				
+			}
+
+			59%  {
+				transform: translateX(-150%);
+				
+			}
+		
+			100% {
+				transform: translateX(-150%);
+			
+			}
+		}
+
+		.screen3 .title p{
+			font-size: 21px;
+			color: white;
+		}
+
+		.screen3 .title p span{
+			font-weight: bold;
+		}
+
+
+
+/* img3 */
+
+		.block_img_3{
+			transform: translateX(-180%);
+			animation-name: img3;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+			position: relative;
+			z-index: 100000;
+			right: 50px;
+			bottom: 170px;
+		}
+
+		@keyframes img3 {
+			0%  {
+				transform: translateX(-180%);
+				
+			}
+
+			20%  {
+				transform: translateX(-180%);
+			
+			}
+
+			21%  {
+				transform: translateX(-180%);	
+			}
+
+			39%  {
+				transform: translateX(-180%);
+				
+			}
+
+			40%  {
+				transform: translateX(0%);
+			}
+
+			58%  {
+				transform: translateX(0%);
+				
+			}
+
+			59%  {
+				transform: translateX(200%);
+				
+			}
+		
+			100% {
+				transform: translateX(200%);
+			
+			}
+		}
+
+
+
+
+/* screen 4 */
+
+		.screen4{
+			position: absolute;
+			width: 100%;
+			height: 170px;
+			padding: 88px 0 0 30px;
+			z-index: 10000;
+			bottom: -4px;
+			left: 0;
+			transform: translateX(150%);
+			background-image: url(./images/red.png);
+
+			animation-name: screen4;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+		}
+
+
+		/* screen4 */
+
+		@keyframes screen4 {
+			0%  {
+				transform: translateX(150%);
+				
+			}
+
+			20%  {
+				transform: translateX(150%);
+			
+			}
+
+			21%  {
+				transform: translateX(150%);	
+			}
+
+			39%  {
+				transform: translateX(150%);
+				
+			}
+
+			40%  {
+				transform: translateX(150%);
+				
+			}
+
+			58%  {
+				transform: translateX(150%);
+				
+			}
+
+			58.6%  {
+				transform: translateX(0%);
+			}
+
+			77%  {
+				transform: translateX(0%);
+				
+			}
+
+			78%  {
+				transform: translateX(-150%);
+				
+			}
+		
+			100% {
+				transform: translateX(-150%);
+			
+			}
+		}
+
+		.screen4 .title p{
+			font-size: 21px;
+			color: white;
+		}
+
+		.screen4 .title p span{
+			font-weight: bold;
+		}
+
+
+/* block_img_4 */
+
+		.block_img_4{
+			transform: translateX(-180%);
+			animation-name: img4;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+			position: relative;
+			z-index: 100000;
+			right: 7px;
+			bottom: 386px;
+		}
+
+		@keyframes img4 {
+			0%  {
+				transform: translateX(-180%);
+				
+			}
+
+			20%  {
+				transform: translateX(-180%);
+			
+			}
+
+			21%  {
+				transform: translateX(-180%);	
+			}
+
+			39%  {
+				transform: translateX(-180%);
+				
+			}
+
+			40%  {
+				transform: translateX(-180%);
+				
+			}
+
+			58%  {
+				transform: translateX(-180%);
+				
+			}
+
+			59%  {
+				transform: translateX(0%);
+			}
+
+			77%  {
+				transform: translateX(0%);
+				
+			}
+
+			78%  {
+				transform: translateX(180%);
+				
+			}
+		
+			100% {
+				transform: translateX(180%);
+			
+			}
+		}
+
+
+
+
+/* screen5 */
+
+		.screen5{
+			position: absolute;
+			width: 100%;
+			top: 177px;
+			left: 0px;
+			
+		}
+
+		@keyframes screen5 {
+			0%  {
+				transform: translateX(-120%);
+				
+			}
+
+			20%  {
+				transform: translateX(-120%);
+			
+			}
+
+			21%  {
+				transform: translateX(-120%);	
+			}
+
+			39%  {
+				transform: translateX(-120%);
+				
+			}
+
+			40%  {
+				transform: translateX(-120%);
+				
+			}
+
+			58%  {
+				transform: translateX(-120%);
+				
+			}
+
+			59%  {
+				transform: translateX(-120%);
+				
+			}
+
+			77%  {
+				transform: translateX(-120%);
+				
+			}
+
+			78%  {
+				transform: translateX(0%);
+				
+			}
+		
+			100% {
+				transform: translateX(0%);
+			
+			}
+		}
+
+		.screen5 .block_button{
+			padding-top: 296px;
+			padding-left: 40px;
+		}
+
+		.screen5 .block_button .button{
+			width: 220px;
+			height: 52px;
+			border: 2px solid #38eb51;
+			border-radius: 32px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			background: none;
+			font-size: 18px;
+
+			transform: translateX(150%);
+			animation-name: button;
+			animation-duration: 20s;
+			animation-iteration-count: infinite;
+		}
+
+
+		@keyframes button {
+			0%  {
+				transform: translateX(150%);
+				background: none;
+				
+			}
+
+			20%  {
+				transform: translateX(150%);
+				background: none;
+			
+			}
+
+			21%  {
+				transform: translateX(150%);
+				background: none;	
+			}
+
+			39%  {
+				transform: translateX(150%);
+				background: none;
+				
+			}
+
+			40%  {
+				transform: translateX(150%);
+				background: none;
+				
+			}
+
+			58%  {
+				transform: translateX(150%);
+				background: none;
+				
+			}
+
+			59%  {
+				transform: translateX(150%);
+				background: none;
+				
+			}
+
+			77%  {
+				transform: translateX(150%);
+				background: none;
+				
+			}
+
+			79%  {
+				transform: translateX(0%);
+				background: none;
+				
+			}
+
+			93%  {
+				background: none;
+			}
+
+			95.1%  {
+				background: #38eb51;
+			}
+
+			95.3%  {
+				background: #38eb51;
+			}
+
+			96.4% {
+				background: none;
+			}
+
+			99%{
+				transform: translateX(0%);
+				background: none;
+			}
+		
+			100% {
+				transform: translateX(0%);
+				transform: translateY(300%);
+				background: none;
+			
+			}
+		}
+
+		
+	</style>
+
+	<div class="wrapper" style=" width: 300px; height: 600px;">
+		
+		<div class="logo_block">
+				<img src="./images/Logo.png" alt="">
+		</div>
+
+		<div class="title_main">
+			<p>Инвестируй</p>
+			<p>в токены регулируемой  биржи</p>
+		</div>
+
+		<div class="title_main_2">
+			<p>Инвестируй</p>
+			<p>в токены регулируемой биржи</p>
+		</div>
+
+
+		<div class="screen2">
+			<div class="title">
+				<p>Уставной фонд<br> проекта <span>958 000$</span></p>
+			</div>
+		</div>
+
+		<div class="block_img_2"><img src="./images/img_2_300x600.png" alt=""></div>
+			
+
+		<div class="screen3">
+			<div class="title">
+				<p><span>Партнерство</span><br> с международной <br>биржей OKEx</p>
+			</div>
+		</div>
+
+		<div class="block_img_3"><img src="./images/handshake_ill.png" alt=""></div>
+		
+
+		<div class="screen4">
+			<div class="title">
+				<p><span>Аудит</span> компанией<br> из Большой четверки</p>
+			</div>
+		</div>
+
+		<div class="block_img_4"><img src="./images/audit_ill.png" alt=""></div>
+		
+
+		<div class="screen5">
+			<div class="block_button">
+				<div class="button">КУПИТЬ</div>
+			</div>
+		</div>
+
+	</div>
+	
+</body>
+</html>
+
