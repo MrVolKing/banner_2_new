@@ -38,95 +38,62 @@
 		.wrapper{
 			background-color: #0b1c3a;;
 			font-family: GothamPro;
-			padding: 110px 43px 0 43px;
+			padding: 20px 35px 0 42px;
 			position: relative;
 			overflow: hidden;
 			cursor: pointer;
-
-			animation-name: wrapper;
-			animation-duration: 15s;
-			animation-iteration-count: infinite;
 		}
-
-		@keyframes wrapper {
-			0%  {
-				padding: 110px 43px 0 43px;
-			}
-
-
-			10%  {
-				padding: 110px 43px 0 43px;
-			}
-
-			11%  {
-				padding: 70px 77px 0 77px;
-			}
-
-			77%  {
-				padding: 70px 77px 0 77px;
-			}
-
-			78%  {
-				padding: 110px 43px 0 43px;
-			}
-		
-			100% {
-				padding: 110px 43px 0 43px;
-			}
-		}
-
-
 
 
 /* title_main */
 		.title_main{
-			transform: translateX(0%);
+			transform: translateY(0%);
 			animation-name: title_main;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
 		}
 
 		.title_main p:first-child{
-			font-size: 30px;
+			font-size: 20px;
 			color: white;
 			text-transform: uppercase;
 			font-weight: bold;	
 		}
 
 		.title_main p:last-child{
-			font-size: 30px;
+			font-size: 20px;
 			color: white;	
 		}
 
-		/* title_main */
+	/* title_main */
 
 		@keyframes title_main {
 			0%  {
-				transform: translateX(0%);
+				transform: translateY(0%);
 				display: block;
 			}
 
 
 			10%  {
-				transform: translateX(0%);
+				transform: translateY(0%);
 				display: block;
 			}
 
 			11%  {
-				transform: translateX(180%);
+				transform: translateY(200%);
 				display: none;
 			}
 
 			77%  {
-				transform: translateX(180%);
+				transform: translateY(200%);
 			}
 
 			78%  {
-				transform: translateX(0%);
+				transform: translateY(0%);
 			}
 		
 			100% {
-				transform: translateX(0%);
+				transform: translateY(0%);
 				display: none;
 			}
 		}
@@ -139,22 +106,23 @@
 			animation-iteration-count: infinite;
 			padding-right: 50px;
 			position: absolute;
-			top: 160px;
+			top: 15px;
+			left: 26px;
 		}
 
 		.title_main_2 p:first-child{
-			font-size: 19px;
+			font-size: 12px;
 			color: white;
 			text-transform: uppercase;
 			font-weight: bold;	
 		}
 
 		.title_main_2 p:last-child{
-			font-size: 19px;
+			font-size: 12px;
 			color: white;	
 		}
 
-		/* title_main_2 */
+	/* title_main_2 */
 
 		@keyframes title_main_2 {
 			0%  {
@@ -178,56 +146,101 @@
 			}
 
 			78%  {
-				transform: translateX(180%);
+				transform: translateX(-150%);
 			}
 		
 			100% {
-				transform: translateX(180%);
+				transform: translateX(-150%);
 				display: none;
 			}
 		}
 
 
 /* logo_main */
-		.logo_block{
-			
-			display: flex;
-    		justify-content: center;
-		}
 
 		.logo_block img{
-			transform: scale(1);
+			transform: translateY(0%);
 			animation-name: logo;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
-			padding-bottom: 78px;
+			padding-bottom: 20px;
 		}		
 
-		/* logo */
+	/* logo */
 
 		@keyframes logo {
 			0%  {
-				transform: scale(1);
+				transform: translateY(0%);
 			}
 
 			10%{
-				transform: scale(1);
+				transform: translateY(0%);
 			}
 
 			11%  {
-				transform: scale(0.7);
+				transform: translateY(-100%);
 			}
 
 			77%  {
-				transform: scale(0.7);
+				transform: translateY(-100%);
 			}
 
 			78%  {
-				transform: scale(1);
+				transform: translateY(0%);
+			}
+
+			99%  {
+				transform: translateY(0%);
 			}
 		
 			100% {
-				transform: scale(1);
+				transform: translateY(0%);
+			}
+		}
+
+
+/* logo_main_2 */
+
+		.logo_block_2 img{
+			transform: translateX(380%);
+			animation-name: logo_2;
+			animation-duration: 15s;
+			animation-iteration-count: infinite;
+
+			position: absolute;
+			right: 25px;
+			top: 21px;
+		}		
+
+	/* logo */
+
+		@keyframes logo_2 {
+			0%  {
+				transform: translateX(380%);
+			}
+
+			10%{
+				transform: translateX(380%);
+			}
+
+			11%  {
+				transform: translateX(0%);
+			}
+
+			77%  {
+				transform: translateX(0%);
+			}
+
+			78%  {
+				transform: translateX(200%);
+			}
+		
+			99% {
+				transform: translateX(200%);
+			}
+
+			100%{
+				transform: translateX(200%);
 			}
 		}
 
@@ -237,13 +250,14 @@
 		.screen2{
 			position: absolute;
 			width: 100%;
-			height: 260px;
-			padding: 183px 0 0 50px;
+			height: 149px;
+			padding: 39px 0 20px 25px;
 			z-index: 10000;
-			bottom: 0;
+			bottom: -2px;
 			left: 0;
-			transform: translateX(-110%);
-			background-image: url(./images/green.png);
+			transform: translateY(110%);
+			background-image: url(./images/green_300_250.png);
+			background-repeat: no-repeat;
 
 			animation-name: screen2;
 			animation-duration: 15s;
@@ -255,32 +269,35 @@
 
 		@keyframes screen2 {
 			0%  {
-				transform: translateX(-110%);
+				transform: translateY(110%);
 				
 			}
 
 			10%  {
-				transform: translateX(-110%);
+				transform: translateY(110%);
 			
 			}
 
 			11%  {
-				transform: translateX(0%);
+				transform: translateY(0%);
 				
 			}
 
 			33%  {
 				transform: translateX(0%);
+				opacity: 1;
 				
 			}
 
 			34%  {
-				transform: translateX(-110%);
+				transform: translateX(0%);
+				opacity: 0;
 				
 			}
 		
 			100% {
-				transform: translateX(-110%);
+				transform: translateX(0%);
+				opacity: 0;
 			
 			}
 		}
@@ -303,10 +320,10 @@
 			animation-name: img2;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
-			position: relative;
+			position: absolute;
 			z-index: 100000;
-			margin-left: -30px;
-			margin-top: -45px;
+			right: 0;
+			bottom: 22px;
 		}
 
 		@keyframes img2 {
@@ -330,21 +347,22 @@
 			33%  {
 				transform: translateX(0%);
 				display: block;
+				opacity: 1;
 				
 			}
 
 			34%  {
-				transform: translateX(150%);
+				transform: translateX(0%);
 				display: block;
+				opacity: 0;
 				
 			}
 		
 			100% {
-				transform: translateX(150%);
-			
+				transform: translateX(0%);
+				opacity: 0;
 			}
 		}
-
 
 
 /* screen 3 */
@@ -352,13 +370,14 @@
 		.screen3{
 			position: absolute;
 			width: 100%;
-			height: 235px;
-			padding: 139px 0 0 50px;
+			height: 142px;
+			padding: 58px 0 0 25px;
 			z-index: 10000;
 			bottom: 0;
 			left: 0;
-			transform: translateX(150%);
-			background-image: url(./images/blue.png);
+			transform: translateY(150%);
+			background-image: url(./images/blue_300_250.png);
+			background-repeat: no-repeat;
 
 			animation-name: screen3;
 			animation-duration: 15s;
@@ -370,21 +389,21 @@
 
 		@keyframes screen3 {
 			0%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				
 			}
 
 			10%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 			
 			}
 
 			11%  {
-				transform: translateX(150%);	
+				transform: translateY(150%);	
 			}
 
 			33%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				
 			}
 
@@ -394,22 +413,25 @@
 
 			56%  {
 				transform: translateX(0%);
+				opacity: 1;
 				
 			}
 
 			57%  {
-				transform: translateX(-150%);
+				transform: translateX(0%);
+				opacity: 0;
 				
 			}
 		
 			100% {
-				transform: translateX(-150%);
+				transform: translateX(0%);
+				opacity: 0;
 			
 			}
 		}
 
 		.screen3 .title p{
-			font-size: 21px;
+			font-size: 20px;
 			color: white;
 		}
 
@@ -418,37 +440,36 @@
 		}
 
 
-
 /* img3 */
 
 		.block_img_3{
-			transform: translateX(-180%);
+			transform: translateX(180%);
 			animation-name: img3;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
-			position: relative;
+			position: absolute;
 			z-index: 100000;
-			right: 50px;
-			bottom: 170px;
+			right: 0px;
+			bottom: 45px;
 		}
 
 		@keyframes img3 {
 			0%  {
-				transform: translateX(-180%);
+				transform: translateX(180%);
 				
 			}
 
 			10%  {
-				transform: translateX(-180%);
+				transform: translateX(180%);
 			
 			}
 
 			11%  {
-				transform: translateX(-180%);	
+				transform: translateX(180%);	
 			}
 
 			33%  {
-				transform: translateX(-180%);
+				transform: translateX(180%);
 				
 			}
 
@@ -458,21 +479,22 @@
 
 			56%  {
 				transform: translateX(0%);
+				opacity: 1;
 				
 			}
 
 			57%  {
-				transform: translateX(200%);
+				transform: translateX(0%);
+				opacity: 0;
 				
 			}
 		
 			100% {
-				transform: translateX(200%);
+				transform: translateX(0%);
+				opacity: 0;
 			
 			}
 		}
-
-
 
 
 /* screen 4 */
@@ -480,13 +502,14 @@
 		.screen4{
 			position: absolute;
 			width: 100%;
-			height: 170px;
-			padding: 88px 0 0 30px;
+			height: 126px;
+			padding: 16px 0 0 25px;
 			z-index: 10000;
 			bottom: -4px;
 			left: 0;
-			transform: translateX(150%);
-			background-image: url(./images/red.png);
+			transform: translateY(150%);
+			background-image: url(./images/red_300_250.png);
+			background-repeat: no-repeat;
 
 			animation-name: screen4;
 			animation-duration: 15s;
@@ -498,31 +521,31 @@
 
 		@keyframes screen4 {
 			0%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				
 			}
 
 			10%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 			
 			}
 
 			11%  {
-				transform: translateX(150%);	
+				transform: translateY(150%);	
 			}
 
 			33%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				
 			}
 
 			34%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				
 			}
 
 			56%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				
 			}
 
@@ -532,22 +555,25 @@
 
 			77%  {
 				transform: translateX(0%);
+				opacity: 1;
 				
 			}
 
 			78%  {
-				transform: translateX(-150%);
+				transform: translateX(0%);
+				opacity: 0;
 				
 			}
 		
 			100% {
-				transform: translateX(-150%);
+				transform: translateX(0%);
+				opacity: 0;
 			
 			}
 		}
 
 		.screen4 .title p{
-			font-size: 21px;
+			font-size: 20px;
 			color: white;
 		}
 
@@ -559,43 +585,43 @@
 /* block_img_4 */
 
 		.block_img_4{
-			transform: translateX(-180%);
+			transform: translateX(180%);
 			animation-name: img4;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
-			position: relative;
+			position: absolute;
 			z-index: 100000;
-			right: 7px;
-			bottom: 386px;
+			right: 20px;
+			bottom: 20px;
 		}
 
 		@keyframes img4 {
 			0%  {
-				transform: translateX(-180%);
+				transform: translateX(180%);
 				
 			}
 
 			10%  {
-				transform: translateX(-180%);
+				transform: translateX(180%);
 			
 			}
 
 			11%  {
-				transform: translateX(-180%);	
+				transform: translateX(180%);	
 			}
 
 			33%  {
-				transform: translateX(-180%);
+				transform: translateX(180%);
 				
 			}
 
 			34%  {
-				transform: translateX(-180%);
+				transform: translateX(180%);
 				
 			}
 
 			56%  {
-				transform: translateX(-180%);
+				transform: translateX(180%);
 				
 			}
 
@@ -605,21 +631,22 @@
 
 			77%  {
 				transform: translateX(0%);
+				opacity: 1;
 				
 			}
 
 			78%  {
-				transform: translateX(180%);
+				transform: translateX(0%);
+				opacity: 0;
 				
 			}
 		
 			100% {
-				transform: translateX(180%);
+				transform: translateX(0%);
+				opacity: 0;
 			
 			}
 		}
-
-
 
 
 /* screen5 */
@@ -632,6 +659,7 @@
 			
 		}
 
+	/* screen5 */
 		@keyframes screen5 {
 			0%  {
 				transform: translateX(-110%);
@@ -684,13 +712,13 @@
 		}
 
 		.screen5 .block_button{
-			padding-top: 296px;
-			padding-left: 40px;
+			display: flex;
+			justify-content: center;
 		}
 
 		.screen5 .block_button .button{
-			width: 220px;
-			height: 52px;
+			width: 203px;
+			height: 48px;
 			border: 2px solid #38eb51;
 			border-radius: 32px;
 			display: flex;
@@ -700,63 +728,63 @@
 			background: none;
 			font-size: 18px;
 
-			transform: translateX(150%);
+			transform: translateY(150%);
 			animation-name: button;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
 		}
 
-
+	/* button */
 		@keyframes button {
 			0%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				background: none;
 				
 			}
 
 			10%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				background: none;
 			
 			}
 
 			11%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				background: none;	
 			}
 
 			33%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				background: none;
 				
 			}
 
 			34%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				background: none;
 				
 			}
 
 			56%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				background: none;
 				
 			}
 
 			57%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				background: none;
 				
 			}
 
 			77%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				background: none;
 				
 			}
 
-			79%  {
-				transform: translateX(0%);
+			78%  {
+				transform: translateY(0%);
 				background: none;
 			}
 
@@ -793,12 +821,11 @@
 			}
 
 			99%{
-				transform: translateX(0%);
+				transform: translateY(0%);
 				background: none;
 			}
 		
 			100% {
-				transform: translateX(0%);
 				transform: translateY(300%);
 				background: none;
 			
@@ -808,10 +835,14 @@
 		
 	</style>
 
-	<div class="wrapper" style=" width: 300px; height: 600px;">
+	<div class="wrapper" style=" width: 300px; height: 250px;">
 		
 		<div class="logo_block">
-				<img src="./images/Logo.png" alt="">
+				<img src="./images/Logo_300_250.png" alt="">
+		</div>
+
+		<div class="logo_block_2">
+			<img src="./images/logo_small_300_250.png" alt="">
 		</div>
 
 		<div class="title_main">
@@ -821,17 +852,17 @@
 
 		<div class="title_main_2">
 			<p>Инвестируй</p>
-			<p>в токены регулируемой биржи</p>
+			<p>в токены<br> регулируемой биржи</p>
 		</div>
 
 
 		<div class="screen2">
 			<div class="title">
-				<p>Уставной фонд<br> проекта <span>958 000$</span></p>
+				<p>Уставной<br> фонд<br> проекта <span><br>958 000$</span></p>
 			</div>
 		</div>
 
-		<div class="block_img_2"><img src="./images/img_2_300x600.png" alt=""></div>
+		<div class="block_img_2"><img src="./images/Safe_300_250.png" alt=""></div>
 			
 
 		<div class="screen3">
@@ -840,16 +871,16 @@
 			</div>
 		</div>
 
-		<div class="block_img_3"><img src="./images/handshake_ill.png" alt=""></div>
+		<div class="block_img_3"><img src="./images/handshake_ill_300_250.png" alt=""></div>
 		
 
 		<div class="screen4">
 			<div class="title">
-				<p><span>Аудит</span> компанией<br> из Большой четверки</p>
+				<p><span>Аудит</span><br> компанией<br> из Большой<br> четверки</p>
 			</div>
 		</div>
 
-		<div class="block_img_4"><img src="./images/audit_ill.png" alt=""></div>
+		<div class="block_img_4"><img src="./images/audit_ill_300_250.png" alt=""></div>
 		
 
 		<div class="screen5">
@@ -862,4 +893,3 @@
 	
 </body>
 </html>
-

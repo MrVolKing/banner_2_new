@@ -38,7 +38,7 @@
 		.wrapper{
 			background-color: #0b1c3a;;
 			font-family: GothamPro;
-			padding: 110px 43px 0 43px;
+			padding: 21px 60px 21px 60px;
 			position: relative;
 			overflow: hidden;
 			cursor: pointer;
@@ -46,32 +46,38 @@
 			animation-name: wrapper;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
+
+			display: flex;
 		}
 
 		@keyframes wrapper {
 			0%  {
-				padding: 110px 43px 0 43px;
+				padding: 15px 30px 20px 30px;
 			}
 
 
 			10%  {
-				padding: 110px 43px 0 43px;
+				padding: 15px 30px 20px 30px;
 			}
 
 			11%  {
-				padding: 70px 77px 0 77px;
+				padding: 15px 30px 20px 30px;
 			}
 
 			77%  {
-				padding: 70px 77px 0 77px;
+				padding: 15px 30px 20px 30px;
 			}
 
 			78%  {
-				padding: 110px 43px 0 43px;
+				padding: 15px 30px 20px 30px;
+			}
+
+			78%  {
+				padding: 15px 30px 20px 30px;
 			}
 		
 			100% {
-				padding: 110px 43px 0 43px;
+				padding: 15px 30px 20px 30px;
 			}
 		}
 
@@ -84,17 +90,26 @@
 			animation-name: title_main;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
+
+			padding-left: 50px;
+			padding-top: 2px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 98px;
+			position: static;
 		}
 
 		.title_main p:first-child{
-			font-size: 30px;
+			font-size: 45px;
 			color: white;
 			text-transform: uppercase;
-			font-weight: bold;	
+			font-weight: bold;
+			padding-right: 16px;	
 		}
 
 		.title_main p:last-child{
-			font-size: 30px;
+			font-size: 13px;
 			color: white;	
 		}
 
@@ -113,137 +128,91 @@
 			}
 
 			11%  {
-				transform: translateX(180%);
+				transform: translateX(700%);
 				display: none;
 			}
 
 			77%  {
-				transform: translateX(180%);
+				transform: translateX(700%);
 			}
 
-			78%  {
-				transform: translateX(0%);
+			79%  {
+				transform: translateX(-189%);
+			}
+
+			99%{
+				transform: translateX(-189%);
 			}
 		
 			100% {
 				transform: translateX(0%);
-				display: none;
+				position: static;
 			}
 		}
 	
-/* title_main_2 */
-		.title_main_2{
-			transform: translateX(-150%);
-			animation-name: title_main_2;
-			animation-duration: 15s;
-			animation-iteration-count: infinite;
-			padding-right: 50px;
-			position: absolute;
-			top: 160px;
-		}
-
-		.title_main_2 p:first-child{
-			font-size: 19px;
-			color: white;
-			text-transform: uppercase;
-			font-weight: bold;	
-		}
-
-		.title_main_2 p:last-child{
-			font-size: 19px;
-			color: white;	
-		}
-
-		/* title_main_2 */
-
-		@keyframes title_main_2 {
-			0%  {
-				transform: translateX(-150%);
-				display: block;
-			}
-
-
-			10%  {
-				transform: translateX(-150%);
-				display: block;
-			}
-
-			11%  {
-				transform: translateX(0%);
-				display: none;
-			}
-
-			77%  {
-				transform: translateX(0%);
-			}
-
-			78%  {
-				transform: translateX(180%);
-			}
-		
-			100% {
-				transform: translateX(180%);
-				display: none;
-			}
-		}
-
-
 /* logo_main */
+
 		.logo_block{
-			
 			display: flex;
-    		justify-content: center;
+			align-items: center;
 		}
 
 		.logo_block img{
-			transform: scale(1);
+			transform: translateX(0%);
 			animation-name: logo;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
-			padding-bottom: 78px;
 		}		
 
 		/* logo */
 
 		@keyframes logo {
 			0%  {
-				transform: scale(1);
+				transform: translateX(0%);
 			}
 
 			10%{
-				transform: scale(1);
+				transform: translateX(0%);
 			}
 
 			11%  {
-				transform: scale(0.7);
+				transform: translateX(0%);
 			}
 
 			77%  {
-				transform: scale(0.7);
+				transform: translateX(0%);
 			}
 
 			78%  {
-				transform: scale(1);
+				transform: translateX(-200%);
+			}
+
+			79%  {
+				transform: translateX(-200%);
+			}
+
+			99%{
+				transform: translateX(-200%);
 			}
 		
 			100% {
-				transform: scale(1);
+				transform: translateX(0%);
 			}
 		}
-
 
 /* screen2 */
 
 		.screen2{
 			position: absolute;
-			width: 100%;
-			height: 260px;
-			padding: 183px 0 0 50px;
+			width: 367px;
+			height: 100%;
+			padding: 23px 85px 23px 0;
 			z-index: 10000;
 			bottom: 0;
-			left: 0;
-			transform: translateX(-110%);
-			background-image: url(./images/green.png);
+			right: 0;
+			transform: translateX(110%);
+			background-image: url(./images/green_728_90.png);
+			background-repeat: no-repeat;
 
 			animation-name: screen2;
 			animation-duration: 15s;
@@ -255,12 +224,12 @@
 
 		@keyframes screen2 {
 			0%  {
-				transform: translateX(-110%);
+				transform: translateX(110%);
 				
 			}
 
 			10%  {
-				transform: translateX(-110%);
+				transform: translateX(110%);
 			
 			}
 
@@ -271,22 +240,29 @@
 
 			33%  {
 				transform: translateX(0%);
+				opacity: 1;
 				
 			}
 
 			34%  {
-				transform: translateX(-110%);
+				transform: translateX(0%);
+				opacity: 0;
 				
 			}
 		
 			100% {
-				transform: translateX(-110%);
+				transform: translateX(0%);
+				opacity: 0;
 			
 			}
 		}
 
+		.screen2 .title{
+			text-align: right;
+		}
+
 		.screen2 .title p{
-			font-size: 21px;
+			font-size: 22px;
 			color: white;
 		}
 
@@ -299,48 +275,52 @@
 /* img2 */
 
 		.block_img_2{
-			transform: translateX(150%);
+			transform: translateY(150%);
 			animation-name: img2;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
 			position: relative;
 			z-index: 100000;
-			margin-left: -30px;
-			margin-top: -45px;
+			position: absolute;
+			right: 333px;
+			top: 8px;
 		}
 
 		@keyframes img2 {
 			0%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				
 			}
 
 			10%  {
-				transform: translateX(150%);
+				transform: translateY(150%);
 				display: block;
 			
 			}
 
 			11%  {
-				transform: translateX(0%);
+				transform: translateY(0%);
 				display: block;
 				
 			}
 
 			33%  {
-				transform: translateX(0%);
+				transform: translateY(0%);
 				display: block;
+				opacity: 1;
 				
 			}
 
 			34%  {
-				transform: translateX(150%);
+				transform: translateY(0%);
+				opacity: 0;
 				display: block;
 				
 			}
 		
 			100% {
-				transform: translateX(150%);
+				transform: translateY(0%);
+				opacity: 0;
 			
 			}
 		}
@@ -351,14 +331,15 @@
 
 		.screen3{
 			position: absolute;
-			width: 100%;
-			height: 235px;
-			padding: 139px 0 0 50px;
+			width: 371px;
+			height: 100%;
+			padding: 10px 82px 6px 0;
 			z-index: 10000;
 			bottom: 0;
-			left: 0;
+			right: 0;
 			transform: translateX(150%);
-			background-image: url(./images/blue.png);
+			background-image: url(./images/blue_728_90.png);
+			background-repeat: no-repeat;
 
 			animation-name: screen3;
 			animation-duration: 15s;
@@ -394,22 +375,29 @@
 
 			56%  {
 				transform: translateX(0%);
+				opacity: 1;
 				
 			}
 
 			57%  {
-				transform: translateX(-150%);
+				transform: translateX(0%);
+				opacity: 0;
 				
 			}
 		
 			100% {
-				transform: translateX(-150%);
+				transform: translateX(0%);
+				opacity: 0;
 			
 			}
 		}
 
+		.screen3 .title{
+			text-align: right;
+		}
+
 		.screen3 .title p{
-			font-size: 21px;
+			font-size: 22px;
 			color: white;
 		}
 
@@ -422,52 +410,55 @@
 /* img3 */
 
 		.block_img_3{
-			transform: translateX(-180%);
+			transform: translateY(150%);
 			animation-name: img3;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
-			position: relative;
+			position: absolute;
 			z-index: 100000;
-			right: 50px;
-			bottom: 170px;
+			right: 313px;
+			top: 0;
 		}
 
 		@keyframes img3 {
 			0%  {
-				transform: translateX(-180%);
+				transform: translateY(150%);
 				
 			}
 
 			10%  {
-				transform: translateX(-180%);
+				transform: translateY(150%);
 			
 			}
 
 			11%  {
-				transform: translateX(-180%);	
+				transform: translateY(150%);	
 			}
 
 			33%  {
-				transform: translateX(-180%);
+				transform: translateY(150%);
 				
 			}
 
 			34%  {
-				transform: translateX(0%);
+				transform: translateY(0%);
 			}
 
 			56%  {
-				transform: translateX(0%);
+				transform: translateY(0%);
+				opacity: 1;
 				
 			}
 
 			57%  {
-				transform: translateX(200%);
+				transform: translateY(0%);
+				opacity: 0;
 				
 			}
 		
 			100% {
-				transform: translateX(200%);
+				transform: translateY(0%);
+				opacity: 0;
 			
 			}
 		}
@@ -479,14 +470,15 @@
 
 		.screen4{
 			position: absolute;
-			width: 100%;
-			height: 170px;
-			padding: 88px 0 0 30px;
+			width: 399px;
+			height: 100%;
+			padding: 22px 82px 21px 0;
 			z-index: 10000;
-			bottom: -4px;
-			left: 0;
-			transform: translateX(150%);
-			background-image: url(./images/red.png);
+			bottom: 0;
+			right: 0;
+			transform: translateY(150%);
+			background-image: url(./images/red_728_90.png);
+			background-repeat: no-repeat;
 
 			animation-name: screen4;
 			animation-duration: 15s;
@@ -532,22 +524,29 @@
 
 			77%  {
 				transform: translateX(0%);
+				opacity: 1;
 				
 			}
 
 			78%  {
-				transform: translateX(-150%);
+				transform: translateX(0%);
+				opacity: 0;
 				
 			}
 		
 			100% {
-				transform: translateX(-150%);
+				transform: translateX(0%);
+				opacity: 0;
 			
 			}
 		}
 
+		.screen4 .title{
+			text-align: right;
+		}
+
 		.screen4 .title p{
-			font-size: 21px;
+			font-size: 22px;
 			color: white;
 		}
 
@@ -559,43 +558,43 @@
 /* block_img_4 */
 
 		.block_img_4{
-			transform: translateX(-180%);
+			transform: translateY(150%);
 			animation-name: img4;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
-			position: relative;
+			position: absolute;
 			z-index: 100000;
-			right: 7px;
-			bottom: 386px;
+			top: 0;
+			right: 362px;
 		}
 
 		@keyframes img4 {
 			0%  {
-				transform: translateX(-180%);
+				transform: translateY(150%);
 				
 			}
 
 			10%  {
-				transform: translateX(-180%);
+				transform: translateY(150%);
 			
 			}
 
 			11%  {
-				transform: translateX(-180%);	
+				transform: translateY(150%);	
 			}
 
 			33%  {
-				transform: translateX(-180%);
+				transform: translateY(150%);
 				
 			}
 
 			34%  {
-				transform: translateX(-180%);
+				transform: translateY(150%);
 				
 			}
 
 			56%  {
-				transform: translateX(-180%);
+				transform: translateY(150%);
 				
 			}
 
@@ -605,16 +604,19 @@
 
 			77%  {
 				transform: translateX(0%);
+				opacity: 1;
 				
 			}
 
 			78%  {
-				transform: translateX(180%);
+				transform: translateX(0%);
+				opacity: 0;
 				
 			}
 		
 			100% {
-				transform: translateX(180%);
+				transform: translateX(0%);
+				opacity: 0;
 			
 			}
 		}
@@ -627,8 +629,9 @@
 		.screen5{
 			position: absolute;
 			width: 100%;
-			top: 177px;
-			left: 0px;
+			height: 100%;
+			bottom: 0;
+			right: 0px;
 			
 		}
 
@@ -683,14 +686,9 @@
 			}
 		}
 
-		.screen5 .block_button{
-			padding-top: 296px;
-			padding-left: 40px;
-		}
-
 		.screen5 .block_button .button{
-			width: 220px;
-			height: 52px;
+			width: 180px;
+			height: 44px;
 			border: 2px solid #38eb51;
 			border-radius: 32px;
 			display: flex;
@@ -698,64 +696,68 @@
 			justify-content: center;
 			color: white;
 			background: none;
-			font-size: 18px;
+			font-size: 15px;
 
-			transform: translateX(150%);
+			transform: translateX(500%);
 			animation-name: button;
 			animation-duration: 15s;
 			animation-iteration-count: infinite;
+
+			position: absolute;
+			right: 20px;
+			top: 23px;
 		}
 
 
 		@keyframes button {
 			0%  {
-				transform: translateX(150%);
+				transform: translateX(500%);
 				background: none;
 				
 			}
 
 			10%  {
-				transform: translateX(150%);
+				transform: translateX(500%);
 				background: none;
 			
 			}
 
 			11%  {
-				transform: translateX(150%);
+				transform: translateX(500%);
 				background: none;	
 			}
 
 			33%  {
-				transform: translateX(150%);
+				transform: translateX(500%);
 				background: none;
 				
 			}
 
 			34%  {
-				transform: translateX(150%);
+				transform: translateX(500%);
 				background: none;
 				
 			}
 
 			56%  {
-				transform: translateX(150%);
+				transform: translateX(500%);
 				background: none;
 				
 			}
 
 			57%  {
-				transform: translateX(150%);
+				transform: translateX(500%);
 				background: none;
 				
 			}
 
 			77%  {
-				transform: translateX(150%);
+				transform: translateX(500%);
 				background: none;
 				
 			}
 
-			79%  {
+			78%  {
 				transform: translateX(0%);
 				background: none;
 			}
@@ -798,8 +800,7 @@
 			}
 		
 			100% {
-				transform: translateX(0%);
-				transform: translateY(300%);
+				transform: translateX(300%);
 				background: none;
 			
 			}
@@ -808,20 +809,15 @@
 		
 	</style>
 
-	<div class="wrapper" style=" width: 300px; height: 600px;">
+	<div class="wrapper" style=" width: 728px; height: 90px;">
 		
 		<div class="logo_block">
-				<img src="./images/Logo.png" alt="">
+			<img src="./images/Logo_728_90.png" alt="">
 		</div>
 
 		<div class="title_main">
 			<p>Инвестируй</p>
 			<p>в токены регулируемой  биржи</p>
-		</div>
-
-		<div class="title_main_2">
-			<p>Инвестируй</p>
-			<p>в токены регулируемой биржи</p>
 		</div>
 
 
@@ -831,7 +827,7 @@
 			</div>
 		</div>
 
-		<div class="block_img_2"><img src="./images/img_2_300x600.png" alt=""></div>
+		<div class="block_img_2"><img src="./images/Safe_728_90.png" alt=""></div>
 			
 
 		<div class="screen3">
@@ -840,7 +836,7 @@
 			</div>
 		</div>
 
-		<div class="block_img_3"><img src="./images/handshake_ill.png" alt=""></div>
+		<div class="block_img_3"><img src="./images/handshake_ill_728_90.png" alt=""></div>
 		
 
 		<div class="screen4">
@@ -849,7 +845,7 @@
 			</div>
 		</div>
 
-		<div class="block_img_4"><img src="./images/audit_ill.png" alt=""></div>
+		<div class="block_img_4"><img src="./images/audit_ill_728_90.png" alt=""></div>
 		
 
 		<div class="screen5">
@@ -862,4 +858,3 @@
 	
 </body>
 </html>
-
